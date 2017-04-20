@@ -36,7 +36,7 @@ if(isset($_POST['loger']))
 {
 $uid = $conn->escape_string($_POST['uid']);
 $pwd = $conn->escape_string($_POST['pwd']);
-$result = mysql_query("SELECT * FROM principal WHERE uid='$uid' AND pwd='$pwd'");
+$result = $conn->query("SELECT * FROM principal WHERE uid='$uid' AND pwd='$pwd'");
 
 if($row = mysql_fetch_array($result))
 {

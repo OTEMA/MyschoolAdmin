@@ -13,26 +13,26 @@ if(isset($_GET['deleteconfirm']))
 {
 $admno=$_GET['admno'];
 $sql1="DELETE FROM stud_id WHERE adm_no='$admno'";
-$result1=mysql_query($sql1);
+$result1=$conn->query($sql1);
 
 if($result1)
 {
 //Admission delete
 $sql2="DELETE FROM stud_adm WHERE adm_no='$admno'";
-$result2=mysql_query($sql2);
+$result2=$conn->query($sql2);
 
 
 //extra1
 $sql5="DELETE FROM extra1 WHERE adm_no='$admno'";
-$result5=mysql_query($sql5);
+$result5=$conn->query($sql5);
 
 //extra2
 $sql6="DELETE FROM extra2 WHERE adm_no='$admno'";
-$result6=mysql_query($sql6);
+$result6=$conn->query($sql6);
 
 //extra3
 $sql7="DELETE FROM extra3 WHERE adm_no='$admno'";
-$result7=mysql_query($sql7);
+$result7=$conn->query($sql7);
 
 echo "</br></br></br></br></br></br></br></br>";
 echo "<center><h3>"."Deleted Successfully"."</h3></center>";

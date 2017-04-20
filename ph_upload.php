@@ -19,7 +19,7 @@ $new_file_name=$random_digit.$random_digits. urlencode($photo);
 $target= "images/student/".$new_file_name;
 $img=$new_file_name;
 $sql="UPDATE stud_adm SET img='$img' WHERE adm_no='$admno'";
-$result= mysql_query($sql);
+$result= $conn->query($sql);
 $immo=move_uploaded_file($_FILES['image']['tmp_name'],$target);
 echo "<br><br><br><br><br><center><h3>Photo Updated Successfully" ;
 }

@@ -66,7 +66,7 @@ if(isset($_GET['view']))
 {
 $name=$conn->escape_string($_GET['name']);
 $cls_adm=$conn->escape_string($_GET['cls_adm']);
-$sql = mysql_query("SELECT * FROM stud_adm WHERE name LIKE '%$name%' AND cls_adm='$cls_adm'");
+$sql = $conn->query("SELECT * FROM stud_adm WHERE name LIKE '%$name%' AND cls_adm='$cls_adm'");
 echo mysql_num_rows($sql);
 echo "<b>"." result found";
 echo "<center>";
