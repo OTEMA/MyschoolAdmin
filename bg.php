@@ -1,29 +1,6 @@
-<style type="text/css">
-body 
-{
-background-color:ffffff;
-background-image:url(images/background/cover.jpg);
-background-repeat:no-repeat;
-background-position:center center;
-background-attachment:fixed;
-background-size: cover;
-}
-</style>
-<title>
-Student Admin
-
-</title>
-<SCRIPT LANGUAGE="JavaScript">
-var message="Right click is disabled";
-///////////////////////////////////
-function clickIE() {if (document.all) {alert(message);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {alert(message);return false;}}}
-if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-
-document.oncontextmenu=new Function("return false")
-// --> 
-</script>
+<link rel="shortcut icon" href="resources/images/background/Otema-school.png"  type="image/x-icon"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="resources/css/style.css" rel="stylesheet" type="text/css"/>
+<script src="resources/js/control.js" type="text/javascript"></script>
