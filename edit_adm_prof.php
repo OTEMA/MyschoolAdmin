@@ -46,7 +46,7 @@ header('Location: default.php') ;
 <?php
 if(isset($_GET['editbyname']))
 {
-$name=mysql_real_escape_string($_GET['name']);
+$name=$conn->escape_string($_GET['name']);
 $sql = mysql_query("SELECT * FROM stud_adm WHERE name LIKE '%$name%'");
 echo mysql_num_rows($sql);
 echo "<b>"." result found";

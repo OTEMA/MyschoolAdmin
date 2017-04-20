@@ -11,7 +11,7 @@ ob_start();
 <h2> Otema Institute Of Science And Techolgy </h2>
         <h2 style="color: #000033;">(Otema School)</font><h2>
 <h3>Student Management System</h3>
-<table border="20" height="100" cellpadding="10" bordercolor='#000033' bgcolor='#E5F4F4'>
+<table border="20" height="150" cellpadding="10" bordercolor='#000033' bgcolor='#E5F4F4'>
 <form action="default.php" method="POST" autocomplete="off">
 <TR>
 <TD><b>Email</b></TD>
@@ -31,7 +31,7 @@ ob_start();
 <TD><b></b></TD>
 <TD>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type="submit" value="Log-In" name="loger" style="height:30px;width:80px">
+<input type="submit" class="btn btn-primary"value="Log-In" name="loger" style="height:30px;width:80px">
 </form>
 </table>
 <?php

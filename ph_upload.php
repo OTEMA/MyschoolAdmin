@@ -11,7 +11,7 @@ header('Location: default.php') ;
 <?php
 if(isset($_POST['phupd']))
 {
-$admno=mysql_real_escape_string($_POST['adm_no']);
+$admno=$conn->escape_string($_POST['adm_no']);
 $photo = $_FILES['image']['name'];
 $random_digit=rand(0000,9999);
 $random_digits=rand(0000,9999);

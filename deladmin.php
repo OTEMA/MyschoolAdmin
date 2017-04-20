@@ -29,7 +29,7 @@ ob_start();
 if(isset($_POST['master']))
 {
 $s=$_SESSION['stduid2'];
-$mpwd = mysql_real_escape_string($_POST['mpwd']);
+$mpwd = $conn->escape_string($_POST['mpwd']);
 $result = mysql_query("SELECT * FROM user WHERE eid='$s' AND mpwd='$mpwd'");
 
 if($row = mysql_fetch_array($result))

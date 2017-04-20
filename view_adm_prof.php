@@ -64,8 +64,8 @@ header('Location: default.php') ;
 <?php
 if(isset($_GET['view']))
 {
-$name=mysql_real_escape_string($_GET['name']);
-$cls_adm=mysql_real_escape_string($_GET['cls_adm']);
+$name=$conn->escape_string($_GET['name']);
+$cls_adm=$conn->escape_string($_GET['cls_adm']);
 $sql = mysql_query("SELECT * FROM stud_adm WHERE name LIKE '%$name%' AND cls_adm='$cls_adm'");
 echo mysql_num_rows($sql);
 echo "<b>"." result found";

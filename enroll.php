@@ -10,13 +10,15 @@ header('Location: default.php') ;
 
 ?>
 <html>
-<head></head>
-<title></title>
+    <head>
+        <title>Enroll student</title>
+    </head>
+
 <body>
 <?php
 $sql="SELECT * FROM last_entry WHERE id='1'";
-$result=mysql_query($sql);
-if($row=mysql_fetch_array($result))
+$result=$conn->query($sql);
+if($row=mysqli_fetch_array($result))
 {
 echo '<b>Last Entry for Admission ';
 echo "</br>";

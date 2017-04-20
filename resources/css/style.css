@@ -1,9 +1,18 @@
    body 
 {
-background-color:ffffff;
+background-color:#ffffff;
 background-image:url(../images/background/cover.jpg);
 background-repeat:no-repeat;
 background-position:center center;
 background-attachment:fixed;
 background-size: cover;
+color: #000066;
+}
+.table-center{
+    margin-top: 150px;
+}
+input{
+    color: #000033;
+    font-family: serif;
+    font-size: 18px;
 }

@@ -11,7 +11,7 @@ header('Location:deladmin.php') ;
 <?php
 if(isset($_GET['delete']))
 {
-$admno=mysql_real_escape_string($_GET['admno']);
+$admno=$conn->escape_string($_GET['admno']);
 $result=mysql_query("SELECT * FROM stud_adm WHERE adm_no='$admno'");
 $row= mysql_fetch_array($result);
 ?>
