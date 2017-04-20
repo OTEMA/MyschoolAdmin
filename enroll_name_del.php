@@ -17,7 +17,7 @@ header('Location: deladmin.php');
 <?php
 $sql="SELECT * FROM last_entry WHERE id='1'";
 $result=$conn->query($sql);
-if($row=mysql_fetch_array($result))
+if($row=mysqli_fetch_array($result))
 {
 echo '<b>Last Entry for Admission ';
 echo "</br>";

@@ -13,7 +13,7 @@ if(isset($_GET['delete']))
 {
 $admno=$conn->escape_string($_GET['admno']);
 $result=$conn->query("SELECT * FROM stud_adm WHERE adm_no='$admno'");
-$row= mysql_fetch_array($result);
+$row= mysqli_fetch_array($result);
 ?>
 <body>
 <br><br><br><br>

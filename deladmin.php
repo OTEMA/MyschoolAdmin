@@ -32,7 +32,7 @@ $s=$_SESSION['stduid2'];
 $mpwd = $conn->escape_string($_POST['mpwd']);
 $result = $conn->query("SELECT * FROM user WHERE eid='$s' AND mpwd='$mpwd'");
 
-if($row = mysql_fetch_array($result))
+if($row = mysqli_fetch_array($result))
 {
 $_SESSION['maspwd2']=$row['mpwd'];//stores password session
 header('location:enroll_name_del.php');
