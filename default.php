@@ -5,10 +5,10 @@ session_start();
 ob_start();
 
 ?>
-<center><img draggable='false' width='100' height='100' src=images/background/logo.png>
+<center><img draggable='false' width='100' height='100' src="resources/images/background/Otema-school.png">
 </center>
 <center>
-<h2> Otema College Of Science And Techolgy </h2>
+<h2> Otema Institute Of Science And Techolgy </h2>
         <h2 style="color: #000033;">(Otema School)</font><h2>
 <h3>Student Management System</h3>
 <table border="20" height="100" cellpadding="10" bordercolor='#000033' bgcolor='#E5F4F4'>
@@ -16,7 +16,7 @@ ob_start();
 <TR>
 <TD><b>Email</b></TD>
 <TD>
-<input type="email" name="uid" autofocus placeholder="someone@domain.com" style="width:180px;height:20px" required>
+    <input type="email" name="uid" autofocus placeholder="someone@domain.com" autocomplete="true"style="width:180px;height:20px" required>
 </TD>
 </TR>
 
