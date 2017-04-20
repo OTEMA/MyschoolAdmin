@@ -1,0 +1,9 @@
+   body 
+{
+background-color:ffffff;
+background-image:url(../images/background/cover.jpg);
+background-repeat:no-repeat;
+background-position:center center;
+background-attachment:fixed;
+background-size: cover;
+}
