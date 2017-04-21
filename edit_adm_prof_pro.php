@@ -87,7 +87,7 @@ Add/Change Photo<input type="file" name="image" required style="width:180px">
 <TD><center><input type="text" name="twnvill" value="<?php echo $row['twnvill'];?>" required maxlength="30"></TD>
 </TR>
 <TD><b><font color='blue'>5.DATE OF BIRTH</b></TD>
-<TD><center><input type="date" name="dob" value="<?php echo $row['dob'];?>" required></TD>
+<TD><center><input type="date" name="dob" value="<?php echo $row['dob'];?>" placeholder="MM/DD/YYYY" required type="text"></TD>
 </TR>
 <TR bgcolor='#E5F4F4'>
 <TD><b><font color='blue'>6.GENDER</b></TD>

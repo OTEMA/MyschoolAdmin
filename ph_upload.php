@@ -15,13 +15,22 @@ $admno=$conn->escape_string($_POST['adm_no']);
 $photo = $_FILES['image']['name'];
 $random_digit=rand(0000,9999);
 $random_digits=rand(0000,9999);
-$new_file_name=$random_digit.$random_digits. urlencode($photo);
-$target= "images/student/".$new_file_name;
+$new_file_name=$random_digit.$random_digits.urlencode($photo);
+$target= "resources/images/student/".$new_file_name;
 $img=$new_file_name;
 $sql="UPDATE stud_adm SET img='$img' WHERE adm_no='$admno'";
-$result= $conn->query($sql);
-$immo=move_uploaded_file($_FILES['image']['tmp_name'],$target);
-echo "<br><br><br><br><br><center><h3>Photo Updated Successfully" ;
+if(copy($_FILES['image']['tmp_name'], $target)){
+    echo "<br><br><br><br><br><center><h3>Moved successfully</h3></center>" ;
+}
+ else {
+    echo "<br><br><br><br><br><center><h3>Unable to move file</h3></center>";
+}
+if($result= $conn->query($sql)){
+    echo "<br><br><br><br><br><center><h3>Photo Updated Successfully</h3></center>";
+}
+ else {
+echo "<br><br><br><br><br><center><h3>Photo Not Updated Successfully</h3></center>";    
+}
 }
 ?>
 <center>
